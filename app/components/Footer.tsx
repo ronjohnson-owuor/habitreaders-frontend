@@ -54,7 +54,7 @@ function Footer() {
           <Link to="/">
             <li>about us</li>
           </Link>
-          <Link to="/">
+          <Link to="/accounts/signup">
             <li className="underline">create account</li>
           </Link>
           <Link to="/">

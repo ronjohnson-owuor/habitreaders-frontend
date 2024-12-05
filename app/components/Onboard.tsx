@@ -1,5 +1,6 @@
 import React from "react";
 import { GrFormNextLink } from "react-icons/gr";
+import { redirect_route } from "~/modules/basic";
 
 function Onboard() {
   return (
@@ -28,7 +29,7 @@ function Onboard() {
                 to become a habit reader start by creating a free account(no
                 credit card required)
               </p>
-              <button className=" p-2 animate-bounce flex items-center justify-center h-[40px] rounded-[40px] mt-4 hover:text-white bg-customMaincolors-primary">
+              <button onClick={()=>redirect_route('accounts/signup')}  className=" p-2 animate-bounce flex items-center justify-center h-[40px] rounded-[40px] mt-4 hover:text-white bg-customMaincolors-primary">
                 <span>create account </span> &nbsp;
                 <GrFormNextLink />
               </button>
@@ -53,7 +54,7 @@ function Onboard() {
               </p>
             </li>
           </ul>
-          <button className=" w-[70%] flex items-center justify-center h-[40px] rounded-[40px] mt-4 hover:text-white bg-customMaincolors-primary">
+          <button onClick={()=>redirect_route('accounts/signup')}   className=" w-[70%] flex items-center justify-center h-[40px] rounded-[40px] mt-4 hover:text-white bg-customMaincolors-primary">
                 <span>get started now </span> &nbsp;
                 <GrFormNextLink />
               </button>

@@ -1,5 +1,6 @@
 import React from "react";
 import { GrFormNextLink } from "react-icons/gr";
+import { redirect_route } from "~/modules/basic";
 
 function Faqs() {
   return (
@@ -14,7 +15,7 @@ function Faqs() {
           doubts and get the clarification you need before starting your journey
           with us.
         </p>
-        <button className="w-[200px] flex items-center justify-center h-[50px] rounded-[40px] mt-4 hover:text-white bg-customMaincolors-primary">
+        <button onClick={()=>redirect_route('accounts/signup')}  className="w-[200px] flex items-center justify-center h-[50px] rounded-[40px] mt-4 hover:text-white bg-customMaincolors-primary">
           <span>get started</span> &nbsp;
           <GrFormNextLink />
         </button>
