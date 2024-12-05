@@ -1,8 +1,10 @@
 import type { MetaFunction } from "@remix-run/node";
+import Faqs from "~/components/Faqs";
 import Hero from "~/components/Hero";
 import Homenav from "~/components/Homenav";
 import Offer from "~/components/Offer";
 import Onboard from "~/components/Onboard";
+import Testimony from "~/components/Testimony";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,11 +15,13 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
+    <div className="w-full min-h-screen bg-customBackground-light dark:bg-customBackground-dark">
     <Homenav/>
     <Hero/>
     <Offer/>
     <Onboard/>
+    <Testimony/>
+    <Faqs/>
     </div>
   );
 }

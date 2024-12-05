@@ -8,7 +8,7 @@ import {
 
 function Offer() {
   return (
-    <div className="w-full mt-[100px] mb-10">
+    <div className="w-full mt-[100px] mb-10 dark:text-customText-dark">
       <div className="w-full flex flex-col gap-2 items-center justify-center">
         <h1 className="font-bold text-2xl">
           We are the best online{" "}
@@ -25,7 +25,7 @@ function Offer() {
         <div className="w-full min-h-[250px] rounded-md shadow-md">
           <div className="w-full h-[60px]">
             <div
-              className="w-[80px] rounded-md rounded-br-[20px] h-full bg-customForeground-light grid place-content-center"
+              className="w-[80px] text-black rounded-md rounded-br-[20px] h-full bg-customForeground-light grid place-content-center"
               id="iconholder"
             >
               <MdOutlineNotificationsActive className="text-xl" />
@@ -45,7 +45,7 @@ function Offer() {
         <div className="w-full min-h-[250px] rounded-md shadow-md">
           <div className="w-full h-[60px]">
             <div
-              className="w-[80px] rounded-md rounded-br-[20px] h-full bg-orange-300 grid place-content-center"
+              className="w-[80px] rounded-md rounded-br-[20px] text-black h-full bg-orange-300 grid place-content-center"
               id="iconholder"
             >
               <IoPeopleOutline className="text-xl" />
@@ -59,7 +59,7 @@ function Offer() {
         <div className="w-full min-h-[250px] rounded-md shadow-md">
           <div className="w-full h-[60px]">
             <div
-              className="w-[80px] rounded-md rounded-br-[20px] h-full bg-green-300 grid place-content-center"
+              className="w-[80px] text-black rounded-md rounded-br-[20px] h-full bg-green-300 grid place-content-center"
               id="iconholder"
             >
               <GiSpellBook className="text-xl" />
@@ -73,7 +73,7 @@ function Offer() {
         <div className="w-full min-h-[250px] rounded-md shadow-md">
           <div className="w-full h-[60px]">
             <div
-              className="w-[80px] rounded-md rounded-br-[20px] h-full bg-slate-300 grid place-content-center"
+              className="w-[80px] text-black rounded-md rounded-br-[20px] h-full bg-slate-300 grid place-content-center"
               id="iconholder"
             >
               <MdOutlineLeaderboard className="text-xl" />
